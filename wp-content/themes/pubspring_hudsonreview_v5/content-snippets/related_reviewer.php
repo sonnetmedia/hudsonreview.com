@@ -1,0 +1,1 @@
+<?php foreach(get_field('reviewed_by_link') as $post_object) { $authorlist[] = '<span class="author-list"> <a href="' . get_permalink($post_object->ID) . '">'   . get_the_title($post_object->ID) . ' </a></span>';    } echo implode(', ', $authorlist); ?>

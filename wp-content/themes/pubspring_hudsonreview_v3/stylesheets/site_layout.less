@@ -1,0 +1,868 @@
+//.wrapper, .navbar 
+body{
+background-image: url(images/brillant.png);
+background-repeat: repeat;
+//background-color: @white;
+//background-image: url(images/hudson_review-seasons_bar_v2.png);
+background-position: left top;
+//background-repeat:repeat-x;
+//margin-top: 6px;
+}
+
+
+//.page_body{
+//background-image: url(images/brillant.png);
+//background-repeat: repeat;
+//
+//}
+
+h1, h2, h3, h4, h5 {
+	line-height: 1.3;
+}
+
+//
+.dropcap p:first-letter {
+	float: left; 
+	font-size: 75px; 
+	line-height: 60px; 
+	padding-top: 4px; 
+	padding-right: 8px; 
+	padding-left: 3px; 
+}
+
+.smallcap {
+	font-variant: small-caps;
+}
+
+p{
+	font-size: @baseFontSize;
+line-height: 	@baseLineHeight;
+	
+}
+ul#nav-tabs-sidebar, ul.article-listing{
+	margin-left: 0;
+}
+ul.sidebar{
+	margin-left: 0;
+}
+ul.sidebar li a{
+	padding-left: 3px;
+}
+
+.sidebar-section ul{
+margin-left: 4px;	
+}
+
+.sidebar-section li, ul.article-listing li {
+
+list-style-type:none ;
+}
+
+ul.sidebar_images{
+			margin: 0;
+}
+
+ul.sidebar_images li {
+	margin: 1.5em 0 1em;
+}
+ul.sidebar_images li img {
+	margin-top: .5em;
+}
+
+.navbar .nav .dropdown-toggle .caret {
+//  margin-top: 12px;
+}
+
+ul.article-listing li {
+	margin-bottom: 1em;
+}
+
+article{
+	.border-radius(3px);
+	//background-color:#EEE;
+//	background-color: @offWhite;
+	background-color: #f8f8f8;
+	background-color: @white;
+//	padding:2.3076923077em;
+	
+		border:1px solid #CCC; 
+  	.box-shadow(inset 0 1px 1px rgba(0,0,0,.05));
+  	margin-bottom: 3em;
+	  padding: 2em 3em;
+  }
+
+article p{
+	font-size: @baseFontSize + 3;	
+}
+
+.flow-left{float:left;margin-right:18px;}
+
+.pull-up-20{
+	margin-top: -20px;
+}
+.pull-up-90{
+	margin-top: -106px;
+}
+
+.pull-up-70{
+	margin-top: -56px;
+}
+
+
+// BRAND
+.the{font-style: italic;font-size: 55%;}
+//.hudson{padding-left: ;}
+.review{padding-left: 0.8461538462em;}
+			
+h1, h2, h3, h4{font-weight: 400;}
+h5, h6{font-family:@altFontFamily;}
+h1{color:@summer;}
+.title-list{
+//	font-size: 30px;
+	margin-bottom:.125em;
+	font-weight:normal;
+	margin-top: 0;
+	}
+	
+h3{color: @blueLight;}
+
+input.vsubmit,
+input[type="submit"]
+{
+			.btn;
+			.btn-small;
+			.btn-primary;
+			
+}
+
+// GLOBAL
+
+header.page_header  {//margin-top:3em;
+	padding: 3em 0 6.3em 0;
+	color: @offWhite;	
+	background-color: @grayDark;
+//	background-image: url(images/hudson_review-banner-990x235-2e2e2e-grad.png), url(images/hudson_review-seasons_bar_v2.png);
+//	background-image: url(images/hudson_review-banner-990x235-png32v3.png), url(images/hudson_review-seasons_bar_v2.png);	
+	background-image: url(images/hudson_review-banner-990x235-png32vgrad.png), url(images/hudson_review-seasons_bar_v3.png);		
+	
+	background-position: center 5%,  right bottom;
+	background-repeat:no-repeat, repeat-x;
+	border-bottom: 1px solid darken(@hrBorder, 5%);
+	margin-bottom: 1em;
+	
+	// SEE ADDTIONAL SPECIFICATIONS IN SEASONS SECTION BELOW
+}
+
+
+header.page_header  p{line-height:150%; color:@grayLighter; }
+
+
+// ARTICLES
+
+h1.entry-title{
+	font-weight:400;
+	margin-bottom:0; 
+	color:@summer; 
+	font-size: 2.8em;
+	line-height: 1.2;	
+//	text-shadow: 0 -1px 0 rgba(0,0,0,.95);
+	text-shadow: none;
+	text-align: center;
+}
+
+h2.page-title{
+	font-weight:400;
+	margin-bottom:0; 
+	color:@blueLight; 
+	font-size: 2.1em;
+//	line-height: 1.3em;	
+	text-shadow: 0 -1px 0 rgba(0,0,0,.75);
+
+}
+
+a.article-list-title {
+	font-size: @baseFontSize + 4;	
+}
+
+
+
+ul.byline{
+//border-top: 1px solid #333;
+list-style-type: none;
+		margin: 0 0 2em 0;
+		font-size: @baseFontSize + 2;
+		text-transform: none;
+		text-align: center;
+	}
+		
+		ul.byline li{
+								display: inline-block;
+		}
+		
+		.author-list, a.author-list {
+					font-variant: small-caps;
+		}
+		
+
+.article_header{
+//	padding: 2em;
+		padding: 1em;
+	min-height: 27px;
+	margin-bottom: 2em;
+		.border-radius(3px) ;
+//	background:  @grayDark url(images/hudson_review-small-banner-435x86.png) no-repeat 10% center;	
+background-color: @grayDark;
+}
+
+article.category-poetry p{
+	line-height: @baseLineHeight * 1.1;
+}
+
+.article_header_issue{
+	padding: 2em;
+	min-height: 27px;
+	margin-bottom: 2em;
+		.border-radius(2px) ;
+//	background:  @grayDark url(images/hudson_review-small-banner-435x86.png) no-repeat 10% center;	
+}
+
+
+.article_header h2{margin: auto;
+	color: @blueLight;
+	
+}
+.content{
+	border-top: 1px solid lighten(@hrBorder, 5%);
+}
+
+
+ul.lcp_catlist{
+list-style-type: none;
+margin-left: 0;
+//width: 60%;
+}
+
+ul.lcp_catlist li, ul.lcp_catlist li a{
+font-size: @baseFontSize + 4;
+line-height: @baseLineHeight + 4; //was +3
+margin-bottom: @baseLineHeight - 8; 
+}
+
+ul.lcp_catlist li a, ul.lcp_catlist li a:link, ul.lcp_catlist li a:active {
+
+}
+
+ul.lcp_catlist li a:hover{
+
+}
+
+
+.image-shadow {
+	-moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.51);
+	-webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.51);
+	box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.51);
+}
+.shadow-light {
+	-moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.40);
+	-webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.40);
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.40);
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 3px 10px 0px #000000;
+  -moz-box-shadow: 0px 3px 10px 0px #000000;
+  box-shadow: 0px 3px 10px 0px #000000;
+}
+.cover_image_shadow {
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+
+
+//.wrapper{width: 100%}
+//.wrapper{
+//margin-top:2em;
+//.shadow-light;}
+//.wrapper{width: 96%;margin: 2% auto;background: url(http://sonnetmedia.org/wp-content/uploads/2012/05/brillant.png) repeat;}
+
+.attribution{color: @grayLighter;}
+
+.brand{
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+	color: @summer;
+	font-family: @serifFontFamily;
+	font-size: 1.9em;
+	line-height: 0.8461538462em;		
+}
+
+a.brand:hover{
+color: @grayLighter;
+text-decoration: none;
+}
+
+
+
+
+
+
+.cover_image_shadow {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.085);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.085);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.085);
+}
+
+
+
+.small_text p{font-size: 14px;line-height: 19px;}
+
+.page_shadow{
+	-webkit-box-shadow:0px 3px 10px rgba(0,0,0,0.5);
+-moz-box-shadow:0px 3px 10px 0px rgba(0,0,0,0.5);
+box-shadow:0px 3px 10px 0px rgba(0,0,0,0.5);
+
+}	
+
+.quotes p, header p{	font-size: @baseFontSize + 9; 
+	//margin may be temporary to align the quote with the heading
+	margin-top: 10px;
+}
+
+
+.wf-inactive p, .wf-loading p, 
+.wf-inactive h1, .wf-loading h1, 
+{
+//display: none;
+}
+
+
+.page_nav {
+  min-height: 20px;
+  padding: 2em 0em 2em 0em;
+  margin-top: 5em;
+  	color: @grayLight;
+  border-top: 1px solid #eee;
+  border-top: 1px solid rgba(0,0,0,.05);
+    border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+.page_nav h2.left{float: left}
+.page_nav h2.right{float: right}
+
+//.page_body article{padding: 4em;}	
+
+
+P{font-weight: 400;}
+
+
+//NAVIGATION
+.nav {
+  margin-bottom: 0;
+  font-family: @sansFontFamily;
+  font-size: @baseFontSize - 3;
+  text-transform: uppercase;
+}
+.navbar{margin-bottom:0;padding-top: 15px;
+}
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner{  
+//.border-radius(0);
+-webkit-box-shadow:none;
+-moz-box-shadow:none;
+box-shadow:none;
+
+
+}
+//.navbar-inner{
+//	background: url(images/hudson_review-seasons_bar_v1.png) repeat-x left bottom #111111;
+//	margin-bottom: 1em;
+//}
+
+.navbar li.active a{
+text-shadow: none;
+//font-weight: bold;			
+}
+
+footer{
+	border-top: 1px solid #e6e6e6;
+	margin-top: 2em;
+	background-color: @footerBackgroundColor;
+}
+
+.footer-nav, .footer-nav li{display: inline;}
+
+#sidebar{ font-family:@altFontFamily;margin-top: 2em;}
+
+#sidebar article{margin-bottom:1em;padding: 1em;
+}
+
+#sidebar ul li, #sidebar ul {
+list-style-type: none;
+margin-left: 0;
+
+}
+.button{
+	.btn;
+}
+
+p.byline, time, .metadata{
+	font-family: @altFontFamily;
+	text-transform: uppercase;
+	font-size: @baseFontSize - 2;
+	color: @grayLight;
+}
+
+p.excerpt, .excerpt p{
+//	margin: 0;
+	font-style: italic;
+	margin-bottom: .025em;
+	line-height: 120%;
+//	font-size: 95%;
+}
+
+
+h2.metadata{
+color:lighten(@winter,8%);
+margin-bottom:.5em;
+font-family:@sansFontFamily;
+font-weight: 300;
+}
+//MISC
+
+.spaced{margin-top: 3em;}
+
+
+//SOCIAL ICONS
+//----------------------------------------------
+
+ul#social_buttons{margin: 1em 0.7692307692em 0 0;list-style-type: none;float: right;}
+ul#social_buttons li{margin-bottom: 1em;text-align: center;}
+li#twitter_icon a {
+text-indent: -9000em;
+display: inline-block;
+height: 26px;
+width: 36px;
+	background: url(/wp-content/uploads/2012/05/icons-social.png) no-repeat left top;
+	
+}
+
+li#twitter_icon a:hover{
+padding: 0;
+border-radius: 0;
+border:none;	
+
+	background-position: left bottom;
+}
+
+
+li#facebook_icon a {
+text-indent: -9000em;
+display: inline-block;
+height: 26px;
+width: 26px;
+	background: url(/wp-content/uploads/2012/05/icons-social.png) no-repeat -35px top;
+}
+
+li#facebook_icon a:hover{
+padding: 0;
+border-radius: 0;
+border:none;	
+
+	background-position: -35px bottom;
+}
+
+
+
+
+li#vimeo_icon a{
+text-indent: -9000em;
+display: inline-block;
+height: 26px;
+width: 27px;
+
+text-align: -9000em;	
+	background: url(/static/images/social-icon-sprites.png) no-repeat -63px top;
+}
+li#vimeo_icon a:hover{
+
+	background-position: -63px bottom;
+}
+
+
+
+li#rss_icon a{
+text-indent: -9000em;
+display: inline-block;
+height: 26px;
+width: 24px;
+
+text-align: -9000em;	
+	background: url(/static/images/social-icon-sprites.png) no-repeat -87px top;
+}
+
+li#rss_icon a:hover{
+padding: 0;
+border-radius: 0;
+border:none;	
+
+	background-position: -87px bottom;
+}
+.navbar-search{border: none;}
+
+//the top declaration makes the archives menu item show a background when on an article page
+body#single-post .navbar .nav .menu-item-32 > a, .navbar .nav .active > a, .navbar .nav .active > a:link, .navbar .nav .active > a:active, .navbar .nav .active > avisited, .navbar .nav .active > a:hover {
+  color: #ffffff;
+  text-decoration: none;
+//   background-color: #115c8f;
+  
+// background: #115c8f; /* Old browsers */
+// background: -moz-linear-gradient(top, #115c8f 2%, #013e6d 49%, #115c8f 100%); /* FF3.6+ */
+// background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#115c8f), color-stop(49%,#013e6d), color-stop(100%,#115c8f)); /* Chrome,Safari4+ */
+// background: -webkit-linear-gradient(top, #115c8f 2%,#013e6d 49%,#115c8f 100%); /* Chrome10+,Safari5.1+ */
+// background: -o-linear-gradient(top, #115c8f 2%,#013e6d 49%,#115c8f 100%); /* Opera 11.10+ */
+// background: -ms-linear-gradient(top, #115c8f 2%,#013e6d 49%,#115c8f 100%); /* IE10+ */
+// background: linear-gradient(top, #115c8f 2%,#013e6d 49%,#115c8f 100%); /* W3C */
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#115c8f', endColorstr='#115c8f',GradientType=0 ); /* IE6-9 */
+  
+}
+
+
+
+ul#menu-footer-menu{display: inline;list-style-type: none;}
+ul#menu-footer-menu li{list-style-type: none;display: inline-block;text-transform: lowercase;margin-left: 1em;font-size: @baseFontSize + 3;}
+
+.format-aside .post-title {
+display:none;
+}
+
+
+// SEASONS .Winter, 
+
+.Winter h2 a{
+	color: @winter;
+		color: @offWhite;
+}
+
+h1.Winter{
+	color: @summer;
+		color: @offWhite;
+}
+
+h1.Spring{
+	color: @winter;
+		color: @offWhite;
+}
+
+h1.Summer{
+	color: @autumn;
+		color: @offWhite;
+}
+
+h1.Autumn{
+	color: @offWhite;
+}
+
+.Spring, .Spring h2 a{
+	color: @spring;
+}
+
+article.Spring{
+border-top: 6px solid @spring;
+}
+
+
+.Summer, .Summer h2 a{
+	color: @summer;
+}
+
+.Autumn, .Autumn h2 a{
+	color: @autumn;
+}
+.Winter_bkgrnd{
+	background-color: @winter;
+}
+
+.Spring_bkgrnd{
+	background-color: @spring;
+}
+
+.Summer_bkgrnd{
+	background-color: @summer;
+}
+
+.Autumn_bkgrnd{
+	background-color: @autumn;
+}
+
+h2.metadata{
+	color: .winter;
+}
+
+h2.catlink a,
+h2.catlink a:link,
+h2.catlink a:active,
+h2.catlink a:visited
+
+{font-weight: normal;
+	color: @grayDarker;
+}
+
+h2.catlink a:hover{
+	color: @linkColor;
+}
+
+// SEASONAL HEADERS
+body#Autumn header.page_header {
+	background-color: @autumn;
+}
+body#Winter header.page_header {
+	background-color: @winter;
+}
+
+body#Spring header.page_header {
+	background-color: @spring;
+}
+
+body#Summer header.page_header {
+	background-color: @summer;
+}
+
+// BRAND FONT
+
+.brand.spring{
+	color: @summer;	
+	  text-shadow: 0 -1px 0 rgba(255,255,255,.85);	
+}
+
+.brand.summer{
+	color: @summer;	
+	  text-shadow: 0 -1px 0 rgba(0,0,0,.25);	
+}
+
+.brand.autumn{
+	color: @autumn;	
+	  text-shadow: 0 -1px 0 rgba(255,255,255,.65);	
+}
+
+.brand.winter{
+	color: @winter;	
+	  text-shadow: 0 -1px 0 rgba(255,255,255,.65);	
+}
+
+
+body#Winter .brand{
+color: @white;
+color: lighten(@summer,8%);
+color: @black;
+	  text-shadow: 0 -1px 0 rgba(255,255,255,.25);	
+}
+
+
+body#Spring .brand{
+	color: lighten(@white, 5%);	
+	  text-shadow: 0 -1px 0 rgba(255,255,255,.85);	
+}
+
+body#Summer .brand{
+//	color: lighten(@summer, 1%);	
+	color: darken(@winter, 36%);
+	color: @black;
+	  text-shadow: 0 -1px 0 rgba(0,0,0,.25);	
+}
+
+body#Autumn .brand{
+	color: lighten(@autumn,75%);
+	  text-shadow: 0 -1px 0 rgba(255,255,255,.65);	
+}
+
+
+body#Winter h2.metadata{
+//color:lighten(@winter,8%);
+	color: lighten(#ffcc33,12%);
+}
+
+body#Spring h2.metadata{
+color:lighten(@black,8%);
+}
+
+body#Summer h2.metadata{
+color:lighten(@black,8%);
+}
+
+body#Autumn h2.metadata{
+color:lighten(@black,8%);
+}
+
+
+body#Spring .navbar a:hover,
+body#Summer .navbar a:hover,
+body#Autumn .navbar a:hover,
+body#Winter .navbar a:hover
+ {
+background-color: darken(@offWhite, 7%);
+color: @grayDark;	
+}
+
+body#Spring .navbar .nav .menu-item-32 > a, 
+body#Spring .navbar .nav .active a, 
+.navbar .nav .active > a, .navbar .nav .active > a:link, 
+.navbar .nav .active > a:active, .navbar .nav .active > a:visited, 
+.navbar .nav .active > a:hover {
+  color: #ffffff;
+  text-decoration: none;
+   background-color: @spring;
+   }
+
+body#Summer .navbar .nav .active a, body#Summer .navbar .nav .menu-item-32 > a, .navbar .nav .active > a, .navbar .nav .active > a:link, .navbar .nav .active > a:active, .navbar .nav .active > avisited, .navbar .nav .active > a:hover {
+  color: #ffffff;
+  text-decoration: none;
+   background-color: @summer;
+   }
+
+body#Autumn .navbar .nav .active a, body#Autumn .navbar .nav .menu-item-32 > a, .navbar .nav .active > a, .navbar .nav .active > a:link, .navbar .nav .active > a:active, .navbar .nav .active > a:visited, .navbar .nav .active > a:hover
+
+{
+  color: #ffffff;
+  text-decoration: none;
+   background-color: @autumn;
+   
+//   .border-radius-corners(7px, 0px) ;
+   }
+
+
+
+
+body#Winter .navbar .nav .active a, 
+body#Winter .navbar .nav .active > a, 
+body#Winter .navbar .nav .active > a:link, 
+body#Winter .navbar .nav .active > a:active, 
+body#Winter .navbar .nav .active > a:visited, 
+body#Winter .navbar .nav .active > a:hover {
+  color: #ffffff;
+  text-decoration: none;
+   background-color: @winter;
+   }
+
+
+.slidedeck-frame{max-width:95%;}
+.navbar-search{float:right;}
+.centered{text-align:center;}
+.text-left, ul.text-left {
+	text-align: left;
+}
+
+
+
+//ANIMATION
+h1.fadein_short,
+.fadein_short
+{
+	animation-delay:0s;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	duration: 1s;
+}
+
+
+.fadein_long, 
+.fadein_long p {animation-delay:0s;
+-moz-animation-delay:0s; /* Firefox */
+-webkit-animation-delay:0s; /*Safari and Chrome */
+	-webkit-animation-duration: 8s;
+	-moz-animation-duration: 8s;
+	-ms-animation-duration: 8s;
+	-o-animation-duration: 8s;
+	duration: 8s;
+}
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 980px) {
+  
+  .hide-on-portrait { 
+  	display: none;
+  }
+  .show-on-portrait { 
+  	display: block;
+  	}
+  	
+   
+}
+
+
+@media (max-width: 768px) {
+
+.pull-up-20{
+//	margin-top: -20px;
+	margin-top: 0;
+}
+.pull-up-90{
+//	margin-top: -86px;
+	margin-top: 0;
+}
+
+.pull-up-70{
+//	margin-top: -56px;
+	margin-top: 0;
+}
+
+}
+
+
+
+
+/////////////////SIDE NAV
+
+//////////////////////////////////////   SIDEBAR  FLUSH LEFT ////////////////////////////////////////////
+
+//left-hand bar and hidden panel
+.nav-side-inner {
+	margin: auto;
+	padding: 2em;
+}
+
+.super-special-aside {
+	background-color: #fbfbfa;
+	background-color: #fffdf1;
+	background-color: #fed464;
+	background-color: #3e94a8;
+	height: 100%;
+	position: fixed;
+	//width: 3%
+	//	.span(2);
+	width: 160px;
+	border-right: 1px solid #eee;
+}
+
+
+.wrapper, .navbar-inner {
+//	margin-left: 180px;
+}
+
+#pageslide {
+    /* These styles MUST be included. Do not change. */
+    display: none;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+    /* Specify the width of your pageslide here */
+    width: 20px;
+    padding: 20px;
+    
+    /* These styles are optional, and describe how the pageslide will look */
+    background-color: #333;
+    color: #FFF;
+    -webkit-box-shadow: inset 0 0 5px 5px #222;
+    -moz-shadow: inset 0 0 5px 5px #222;
+    box-shadow: inset 0 0 5px 5px #222;
+}
+
+

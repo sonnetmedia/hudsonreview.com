@@ -1,0 +1,1 @@
+<?php  $query = new WP_Query( 'post_type=sm_issues&posts_per_page=1&offset=0' );if ($query->have_posts()) : while($query->have_posts()) : $query->the_post(); the_field('issue_season');  endwhile; endif;wp_reset_postdata(); ?>

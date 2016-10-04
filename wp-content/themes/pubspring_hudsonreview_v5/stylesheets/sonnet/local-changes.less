@@ -1,0 +1,622 @@
+.jumbotron
+{
+	background-image: url(images/hudson_review-banner-990x235-png32vgrad.png), url(images/hudson_review-seasons_bar_v3.png);			
+	background-position: center 22%,  right bottom;
+	background-repeat:no-repeat, repeat-x;
+	margin-bottom: 1em;
+	padding-top: 20px;
+	}
+
+
+@media (max-width: 767px) {
+.jumbotron
+{
+	background-image: url(images/hudson_review-seasons_bar_v3.png);			
+	background-position:  right bottom;
+	background-repeat: repeat-x;
+	margin-bottom: 1em;
+	padding-top: 7px;
+	padding-bottom: 50px;
+	}
+}
+
+.jumbotron h1 {
+	font-size: 60px;
+}
+
+// BRAND - styling the identity text in the jumbotron/banner
+.brand {
+	text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+	font-family: @font-family-serif;
+	line-height: .5;
+}
+
+h1 a.brand {
+	color: darken(@body-bg,10%);
+}
+a.brand:hover {
+	//color: @gray-lighter;
+	text-decoration: none;
+}
+.the {
+	font-style: italic;
+	font-size: 55%;
+	}
+.attribution{color: @gray-lighter;}
+
+h2.metadata{
+color: @gray-light;
+margin-bottom:.5em;
+font-family:@font-family-sans-serif;
+font-weight: 300;
+}
+
+///TEXT
+.button{
+	.btn;
+}
+input.vsubmit,
+input[type="submit"]
+{
+			.btn;
+			.btn-sm;
+			.btn-primary;
+			
+}
+
+
+
+footer{
+	border-top: 1px solid #e6e6e6;
+	margin-top: 2em;
+	background-color: #333; //@footerBackgroundColor;
+}
+
+.footer-nav, .footer-nav li{display: inline;}
+
+#sidebar{ font-family:@font-family-sans-serif;margin-top: 2em;}
+
+#sidebar article{margin-bottom:1em;padding: 1em;
+}
+
+#sidebar ul li, #sidebar ul {
+list-style-type: none;
+margin-left: 0;
+
+}
+
+.strong {
+	font-weight: bold;
+}
+
+ul.inline li {
+	display: inline;
+}
+.button{
+	.btn;
+}
+
+.label {
+font-family: @font-family-sans-serif;
+text-transform: uppercase;
+font-size: 9px;
+font-weight: 300;	
+}
+p.byline, time, .metadata, .metadata a{
+	font-family: @font-family-sans-serif;
+	text-transform: uppercase;
+	//font-size: @font-size-mini;
+	font-size: @font-size-small;
+	color: @gray-light;
+}
+
+.metadata-heading {
+font-family: @font-family-sans-serif;
+text-transform: uppercase;
+font-size: (@font-size-base * 1.2);
+//color: @gray-light;
+margin-bottom: 8px;
+	
+}
+
+p.excerpt, .excerpt p{
+//	margin: 0;
+	font-style: italic;
+	margin-bottom: .025em;
+	line-height: 120%;
+//	font-size: 95%;
+}
+
+
+
+///=============== NAV =======================
+
+//NAVIGATION
+.nav {
+  font-family: @font-family-sans-serif;
+  font-size: @font-size-base - 3;
+  text-transform: uppercase;
+}
+.navbar {
+	padding-top: 15px;
+}
+.navbar .nav>li>a {
+	padding-bottom: 7px;
+	padding-top: 5px;
+	
+}
+.dropdown-menu>li>a {
+	font-size: @font-size-small;
+}
+// .nav > li > a {
+// 	padding: 2px 1px;
+// }
+.navbar li.active a{
+text-shadow: none;
+//font-weight: bold;			
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover {
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+font-weight: 300;
+}
+
+//the top declaration makes the archives menu item show a background when on an article page
+body#single-post .navbar .nav .menu-item-32 > a, .navbar .nav .active > a, .navbar .nav .active > a:link, .navbar .nav .active > a:active, .navbar .nav .active > avisited, .navbar .nav .active > a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  
+}
+//=============== END NAV =================
+
+			
+h1, h2, h3, h4{font-weight: 400;}
+h5, h6{font-family:@font-family-sans-serif;}
+h1{color:@summer;}
+.title-list{
+	margin-bottom:.125em;
+	font-weight:normal;
+	margin-top: 0;
+	}
+	
+.title-archive {
+			margin: 0;
+			line-height: 1.2;
+			padding: 0;
+			font-size: (@font-size-base * 1.5);
+}
+
+.title-archive a {
+	color: @gray;//#555;
+}
+
+// SPECIALS
+.dropcap p:first-letter {
+	float: left; 
+	font-size: 75px; 
+	line-height: 60px; 
+	padding-top: 4px; 
+	padding-right: 8px; 
+	padding-left: 3px; 
+}
+
+.smallcap {
+	font-variant: small-caps;
+}
+
+// SIDEBAR
+
+
+ul#nav-tabs-sidebar, ul.article-listing{
+	margin-left: 0;
+}
+ul.sidebar{
+	margin-left: 0;
+}
+ul.sidebar li a{
+	padding-left: 3px;
+}
+
+.sidebar-section ul{
+margin-left: 4px;	
+}
+
+.sidebar-section li, ul.article-listing li {
+
+list-style-type:none ;
+}
+
+ul.sidebar_images{
+			margin: 0;
+}
+
+ul.sidebar_images li {
+	margin: 1.5em 0 1em;
+}
+ul.sidebar_images li img {
+	margin-top: .5em;
+}
+ul.article-listing li {
+	margin-bottom: 1em;
+}
+
+article {
+	border-radius: 3px;
+	background-color: lighten(@body-bg, 1%);
+	border:1px solid #CCC; 
+	.box-shadow(inset 0 1px 1px rgba(0,0,0,.05));
+	margin-bottom: 3em;
+	padding: 2em 2em;
+  }
+  
+  article.post {
+  	padding: 2em 3em;
+  }
+
+article.widget {padding-top:0;}
+
+
+article p{
+	font-size: @font-size-base + 3;	
+}
+ul.issue-list li {
+	font-size: @font-size-base + 1;
+}
+
+
+.flow-left{float:left;margin-right:18px;}
+
+.pull-up-20{
+	margin-top: -20px;
+}
+.pull-up-90{
+	margin-top: -90px;
+}
+
+.pull-up-70{
+	margin-top: -56px;
+}
+
+// ARTICLES
+
+h1.entry-title{
+	font-weight:400;
+	margin-bottom:0; 
+	color:@summer; 
+	font-size: 2.8em;
+	line-height: 1.2;	
+//	text-shadow: 0 -1px 0 rgba(0,0,0,.95);
+	text-shadow: none;
+	text-align: center;
+}
+
+h1.page-title, h2.page-title{
+	font-weight:400;
+	margin-bottom:0; 
+//	color:@blueLight; 
+	font-size: 2.1em;
+//	line-height: 1.3em;	
+	text-shadow: 0 -1px 0 rgba(0,0,0,.75);
+
+}
+
+a.article-list-title {
+	font-size: @font-size-base + 4;	
+}
+
+
+
+ul.byline{
+//border-top: 1px solid #333;
+list-style-type: none;
+		margin: 0 0 1.5em 0;
+		font-size: @font-size-base + 2;
+		text-transform: none;
+		text-align: center;
+	}
+		
+		ul.byline li{
+								display: inline-block;
+		}
+		
+		.author-list, a.author-list {
+					font-variant: small-caps;
+		}
+		
+
+.article_header, .article_header_issue {
+	padding: 2em;
+	margin-bottom: 2em;
+	border-radius: 3px ;
+	background-color: #172630;//@gray-darker;
+}
+
+article.category-poetry p{
+line-height: @line-height-base * 1.1;
+}
+
+.article_header, .article_header a {
+	color: #ececec;
+}
+
+.article_header h2{
+	margin: auto;
+	
+}
+.content{
+	border-top: 1px solid lighten(@hrBorder, 5%);
+}
+
+
+ul.lcp_catlist{
+list-style-type: none;
+margin-left: 0;
+}
+
+ul.lcp_catlist li, ul.lcp_catlist li a{
+font-size: @font-size-base + 4;
+line-height: @line-height-base + 4; //was +3
+margin-bottom: @line-height-base - 8; 
+}
+.image-shadow {
+	-moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.51);
+	-webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.51);
+	box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.51);
+}
+.shadow-light {
+	-moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.40);
+	-webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.40);
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.40);
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.40);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.40);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.40);
+}
+.cover_image_shadow {
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.cover_image_shadow {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.085);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.085);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.085);
+}
+body.home .w50{
+	width: 98%;		
+}
+
+body.home .border_bottom {
+	margin-bottom:30px;border-bottom:1px solid #dadada;padding-bottom:30px;
+}
+.center, img.center, body.home img.wp-post-image {
+	// centering image in column where other techniques are not
+	// margin: auto !important;
+	// width: 120px;
+margin-left: 5%;
+}
+
+.small_text p{font-size: 14px;line-height: 19px;}
+
+.page_shadow{
+	-webkit-box-shadow:0px 3px 10px rgba(0,0,0,0.5);
+-moz-box-shadow:0px 3px 10px 0px rgba(0,0,0,0.5);
+box-shadow:0px 3px 10px 0px rgba(0,0,0,0.5);
+
+}	
+
+.quotes p, header p{	font-size: @font-size-base + 9; 
+	//margin may be temporary to align the quote with the heading
+	margin-top: 10px;
+}
+
+
+.wf-inactive p, .wf-loading p, 
+.wf-inactive h1, .wf-loading h1, 
+{
+//display: none;
+}
+
+
+.page_nav {
+  min-height: 20px;
+  padding: 2em 0em 2em 0em;
+  margin-top: 5em;
+  	color: @gray-light;
+  border-top: 1px solid #eee;
+  border-top: 1px solid rgba(0,0,0,.05);
+    border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+.page_nav h2.left{float: left}
+.page_nav h2.right{float: right}
+
+
+
+//MISC
+
+.spaced{margin-top: 3em;}
+
+
+
+ul#menu-footer-menu{display: inline;list-style-type: none;}
+ul#menu-footer-menu li{list-style-type: none;display: inline-block;text-transform: lowercase;margin-left: 1em;font-size: @font-size-base + 3;}
+
+.format-aside .post-title {
+display:none;
+}
+
+
+// SEASONS .Winter, 
+
+.Winter h2 a{
+	color: @winter;
+		color: @offWhite;
+}
+
+h1.Winter{
+	color: @summer;
+		color: @offWhite;
+}
+
+h1.Spring{
+	color: @winter;
+		color: @offWhite;
+}
+
+h1.Summer{
+	color: @autumn;
+		color: @offWhite;
+}
+
+h1.Autumn{
+	color: @offWhite;
+}
+
+.Spring, .Spring h2 a{
+	color: @spring;
+}
+
+article.Spring{
+border-top: 6px solid @spring;
+}
+
+
+.Summer, .Summer h2 a{
+	color: @summer;
+}
+
+.Autumn, .Autumn h2 a{
+	color: @autumn;
+}
+
+h2.metadata{
+	color: .winter;
+}
+
+h2.catlink a,
+h2.catlink a:link,
+h2.catlink a:active,
+h2.catlink a:visited
+
+{font-weight: normal;
+	color: @gray-darker;
+}
+
+h2.catlink a:hover{
+	color: @link-color;
+}
+
+
+
+.slidedeck-frame{max-width:95%;}
+
+.centered{text-align:center;}
+.text-left, ul.text-left {
+	text-align: left;
+}
+
+
+
+//ANIMATION
+h1.fadein_short,
+.fadein_short
+{
+	animation-delay:0s;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	duration: 1s;
+}
+
+
+.fadein_long, 
+.fadein_long p {animation-delay:0s;
+-moz-animation-delay:0s; /* Firefox */
+-webkit-animation-delay:0s; /*Safari and Chrome */
+	-webkit-animation-duration: 8s;
+	-moz-animation-duration: 8s;
+	-ms-animation-duration: 8s;
+	-o-animation-duration: 8s;
+	duration: 8s;
+}
+
+
+input.search-query {
+font-family: @font-family-sans-serif;
+//font-size: @font-size-mini;
+font-size: @font-size-small;
+padding-bottom: 0px;
+text-transform: uppercase;
+padding-top: 3px;
+min-height: 1.5em;
+
+background-color: @body-bg;
+border-top: none;
+border-right: none;
+border-left: none;
+box-shadow: none;
+
+  padding-right: 14px;
+  padding-right: 4px \9;
+  padding-left: 14px;
+  padding-left: 4px \9; /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0; // Remove the default margin on all inputs
+//  .border-radius(15px);
+  border-radius: 0px;
+}
+
+.form-inline {
+  input,
+  select,
+  textarea,
+  .radio,
+  .checkbox {
+    display: inline-block;
+  }
+  .radio,
+  .checkbox {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+figure {line-height: 1.1;}
+/* BP EDITS 130604 */
+article.widget {padding-top: 0;}
+.nav>li>a {
+  padding:1px 9px;
+}
+h2.home_page_heading {margin-bottom:.25em;margin-top:4px;}
+
+body.home .metadata {font-size: 14px; line-height: 1.6;}
+
+.article_header_issue {
+  padding: .5em 2em 2em 2em;
+}
+.wp_cart_button_wrapper {margin: 8px 0;}
+
+
+figcaption {
+  line-height: 1.2;
+  font-size: 90%;
+  padding: 4px;
+}
+
+h2.page-title {
+  font-family: "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 90%;
+  font-weight: 300;
+}
+
+h2.page-title small {
+  font-size: 80%;
+}
+
+
